@@ -8,5 +8,5 @@ const prompt = require('prompt-sync')({sigint: true});
 function startingMsg() {
 	console.log(`Hello There!`);
 	let num = prompt(`Enter your value in Euro to convert to whatever you want: `);
-	
+	let convertTo = prompt(`Please use tree-letter currency code: `);
 }
