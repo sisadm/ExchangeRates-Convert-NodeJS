@@ -20,5 +20,12 @@ function startingMsg() {
 // calculating 
 
 function calc(inputVal, currencyCode, CurrencyValue) {
-	console.log(`Your ${inputVal}EUR is worth${Number(inputVal * CurrencyValue)}${currencyCode}`);
+	return console.log(`Your ${inputVal}EUR is worth${Number(inputVal * CurrencyValue)}${currencyCode}`);
 };
+
+
+// get API request
+
+function getExchange(currencyCode, number) {
+
+}
