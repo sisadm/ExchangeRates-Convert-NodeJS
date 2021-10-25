@@ -34,5 +34,10 @@ function getExchange(currencyCode, number) {
 		response.on('data', data=> {
 			body += data.toString();
 		})
+
+		response.on('end', () => {
+			const exch = JSON.parse(body);
+			
+		})
 	})
 }
