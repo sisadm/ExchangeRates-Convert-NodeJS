@@ -13,6 +13,6 @@ function startingMsg() {
 	if(/(.*[a-z]){3}/i.test(convertTo)) {
 
 	} else {
-		console.error(`Please use only letters, for example USD/GBP`);
+		console.error(`Please use only three letters, for example USD/GBP`);
 	}
 }
