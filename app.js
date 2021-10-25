@@ -16,3 +16,9 @@ function startingMsg() {
 		console.error(`Please use only three letters, for example USD/GBP`);
 	}
 }
+
+// calculating 
+
+function calc(inputVal, currencyCode, CurrencyValue) {
+
+}
