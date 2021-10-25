@@ -30,5 +30,9 @@ function getExchange(currencyCode, number) {
 	const request = http.get('http://api.exchangeratesapi.io/v1/latest?access_key=7195c5da9b3d875607f73a4e06068b51', response => {
 		let body = '';
 		currencyCode = currencyCode.toUpperCase();
+
+		response.on('data', data=> {
+			body += data.toString();
+		})
 	})
 }
