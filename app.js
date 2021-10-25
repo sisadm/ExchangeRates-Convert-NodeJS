@@ -37,7 +37,10 @@ function getExchange(currencyCode, number) {
 
 		response.on('end', () => {
 			const exch = JSON.parse(body);
-			calc(number, currencyCode, exch.rates[currencyCode])
+			calc(number, currencyCode, exch.rates[currencyCode]);
 		})
 	})
-}
+};
+
+startingMsg();
+
