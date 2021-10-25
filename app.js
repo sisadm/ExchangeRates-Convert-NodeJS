@@ -11,7 +11,7 @@ function startingMsg() {
 	let convertTo = prompt(`Please use tree-letter currency code: `);
 
 	if(/(.*[a-z]){3}/i.test(convertTo)) {
-
+		getExchange(convertTo, num)
 	} else {
 		console.error(`Please use only three letters, for example USD/GBP`);
 	}
@@ -20,7 +20,7 @@ function startingMsg() {
 // calculating 
 
 function calc(inputVal, currencyCode, CurrencyValue) {
-	return console.log(`Your ${inputVal}EUR is worth${Number(inputVal * CurrencyValue)}${currencyCode}`);
+	return console.log(`Your ${inputVal}EUR is worth ${Number(inputVal * CurrencyValue)}${currencyCode}`);
 };
 
 
