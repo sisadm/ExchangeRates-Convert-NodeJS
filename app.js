@@ -20,5 +20,5 @@ function startingMsg() {
 // calculating 
 
 function calc(inputVal, currencyCode, CurrencyValue) {
-
-}
+	console.log(`Your ${inputVal}EUR is worth${Number(inputVal * CurrencyValue)}${currencyCode}`);
+};
